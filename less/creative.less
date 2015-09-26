@@ -101,11 +101,14 @@ aside {
 }
 
 #mini-logo {
-  opacity: 0;
+  opacity: 1;
+  margin-top:5px;
+  margin-left: 5px;
   transition: opacity -.8s ease-in-out;
   -moz-transition: opacity -.8s ease-in-out;
   -webkit-transition: opacity -.8s ease-in-out;
 }
+
 // Navigation
 
 .navbar-default {
@@ -148,6 +151,10 @@ aside {
     }
   }
   @media (min-width: 768px) {
+    #mini-logo {
+      opacity: 0;
+      margin-left: 0px;
+    }
     background-color: transparent;
     border-color: fade(white, 30%);
     .navbar-header .navbar-brand {

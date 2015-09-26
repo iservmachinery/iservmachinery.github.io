@@ -84,7 +84,9 @@ aside {
   }
 }
 #mini-logo {
-  opacity: 0;
+  opacity: 1;
+  margin-top: 5px;
+  margin-left: 5px;
   transition: opacity -0.8s ease-in-out;
   -moz-transition: opacity -0.8s ease-in-out;
   -webkit-transition: opacity -0.8s ease-in-out;
@@ -131,6 +133,10 @@ aside {
   .navbar-default {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.3);
+  }
+  .navbar-default #mini-logo {
+    opacity: 0;
+    margin-left: 0px;
   }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
