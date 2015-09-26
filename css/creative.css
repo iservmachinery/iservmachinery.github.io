@@ -70,7 +70,7 @@ aside {
 }
 @media (max-width: 500px) {
   #truck-img {
-    max-height: 250px;
+    max-height: 240px;
   }
 }
 @media (max-width: 500px) {
@@ -82,6 +82,12 @@ aside {
   #header-content-logo-stacked {
     display: none;
   }
+}
+#mini-logo {
+  opacity: 0;
+  transition: opacity -0.8s ease-in-out;
+  -moz-transition: opacity -0.8s ease-in-out;
+  -webkit-transition: opacity -0.8s ease-in-out;
 }
 .navbar-default {
   background-color: white;
@@ -145,6 +151,10 @@ aside {
   .navbar-default.affix {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
+  }
+  .navbar-default.affix #mini-logo {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
   }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #fdb016;

@@ -85,7 +85,7 @@ aside {
   background-size: 100% auto;
 
   @media (max-width: 500px) {
-    max-height: 250px;
+    max-height: 240px;
   }
 }
 
@@ -98,6 +98,13 @@ aside {
   #header-content-logo-stacked {
     display: none;
   }
+}
+
+#mini-logo {
+  opacity: 0;
+  transition: opacity -.8s ease-in-out;
+  -moz-transition: opacity -.8s ease-in-out;
+  -webkit-transition: opacity -.8s ease-in-out;
 }
 // Navigation
 
@@ -162,6 +169,10 @@ aside {
     }
 
     &.affix {
+      #mini-logo {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+      }
       background-color: white;
       border-color: fade(@theme-dark, 5%);
       .navbar-header .navbar-brand {
