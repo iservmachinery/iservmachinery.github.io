@@ -71,6 +71,34 @@ aside {
   padding: 0;
 }
 
+#header-content-logo {
+  margin: auto;
+}
+#header-content-logo-stacked {
+  max-height: 500px;
+  margin: auto;
+}
+
+#truck-img {
+  height: 400px;
+  background: @iserv-grey url(../img/20150907_094055-1.jpg) center no-repeat;
+  background-size: 100% auto;
+
+  @media (max-width: 500px) {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  #header-content-logo {
+    display: none;
+  }
+}
+@media (min-width: 501px) {
+  #header-content-logo-stacked {
+    display: none;
+  }
+}
 // Navigation
 
 .navbar-default {
@@ -153,6 +181,7 @@ aside {
       }
     }
   }
+
 }
 
 // Homepage Header
