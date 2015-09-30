@@ -73,6 +73,9 @@ aside {
     max-height: 240px;
   }
 }
+header {
+  background-color: #58585a;
+}
 .row-gal-img {
   background-size: cover;
   height: 300px;
